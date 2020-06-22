@@ -30,6 +30,10 @@ h4 {
     font-weight: 700;
 }
 
+.fuente-grande {
+    font-size: 24px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -60,6 +64,21 @@ header {
     font-weight: 700;
     
 }
+
+.fondo {
+    background-color: #007070;
+}
+
+.carousel-indicators {
+    top: 60px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#ffffff;
+  }
 
 @media (max-width: 576px) {
     .seccion-descripcion {
