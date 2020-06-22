@@ -34,13 +34,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de mi</a>
+                <a class="nav-link" href="#acerca-de-mi">Acerca de mi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#trabajos">Trabajos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
@@ -53,15 +53,15 @@
 
     <!-- Comienzo Header -->
     <main>
-      <header class="hero text-white text-right py-5 mt-5">
+      <header id="Inicio" class="hero text-right py-5 mt-5">
         <div class="container">
           <h1 class="pt-5 mt-5">Hola!</h1>
-          <h2 class="text-white">Soy Javi, Diseñadora Gráfica</h2>
+          <h2>Soy Javi, Diseñadora Gráfica</h2>
         </div>
       </header>
     <!-- Fin Header -->
     <!-- Acerca de mi -->
-      <section class="container my-5">
+      <section id="Acerca-de-mi" class="container my-5 seccion-descripcion">
         <div class="text-center pt-5">
           <h3>Acerca de mi</h3>
           <h2>¿Que hago?</h2>
@@ -74,12 +74,12 @@
             <p>Poseo afinidad con el área digital, desarrollo de páginas web, con y sin administración via Wordpress. Manipulación de themes. Amante de la encuadernación, desarrollo de manualidades en los tiempos libres, andar en bicicleta y disfrutar de mis amigos y familia.</p>
           </div>
         </div>
-        <hr class="mt-5">
+        <hr class="mt-5 border">
       </section>
     <!-- Fin Acerca de mi -->
 
     <!-- Mi Experiencia -->
-      <section class="container text-center py-5">
+      <section id="experiencia" class="container text-center py-5">
         <div class="py-3">
           <h3>Mi Experiencia</h3>
           <h2>Desarrollo Profesional</h2>
@@ -87,19 +87,19 @@
 
         <div class="row py-3">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <i class="fas fa-camera fa-3x my-3"></i>
+            <i class="fas fa-paint-brush fa-3x my-3 icono"></i>
             <h4>Diseñadora Gráfica Freelance</h4>
             <p>Desarrollo de Branding y Sitio web en plataforma Wordpress</p>
           </div>
 
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <i class="fas fa-camera fa-3x my-3"></i>
+            <i class="fas fa-laptop-code fa-3x my-3 icono"></i>
             <h4>Desarrolladora Freelance</h4>
             <p>Aplicación de HTML · CSS · Manejo de Themes</p>
           </div>
 
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <i class="fas fa-camera fa-3x my-3"></i>
+            <i class="fas fa-edit fa-3x my-3 icono"></i>
             <h4>Diseñadora Gráfica</h4>
             <p>Desarrollo y ejecución de campañas creativas. Desarrollo de proyectos de Branding, Web y RR.SS</p>
           </div>
@@ -107,8 +107,49 @@
       </section>
     <!-- Fin Mi Experiencia -->
 
+    <!-- Carrusel -->
+    <section class="carrusel container my-4 bg-dark">
+      <div class="row">
+          <div>
+              <div id="indicadores" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#indicadores" data-slide-to="0" class="active"></li>
+                      <li data-target="#indicadores" data-slide-to="1"></li>
+                  </ol>
+
+                  <div class="carousel-inner text-center">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-6">
+                                <i class="fas fa-camera fa-3x my-3"></i>
+                              </div>
+                              <div class="col-6"> 
+                                <i class="fas fa-camera fa-3x my-3"></i>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-6">
+                                <i class="fas fa-camera fa-3x my-3"></i>
+                              </div>
+                              <div class="col-6"> 
+                                <i class="fas fa-camera fa-3x my-3"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Fin Carrusel -->
+
+
     <!-- Mis trabajos -->
-      <section class="container-fluid text-center bg-textura p-5">
+      <section id="trabajos" class="container-fluid text-center bg-textura p-5">
         <div class="py-3 text-white">
           <h3>Mis Últimos Trabajos</h3>
           <h2 class="text-white">Lo que he realizado</h2>
@@ -169,13 +210,17 @@
           </div>
         </div>
 
+        <div class="mt-5">
+          <button type="button" class="botones btn-sm mr-4 py-2 px-3" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo">Contactar</button>
+          <button type="button" class="botones btn-sm py-2 px-3" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Ver más</button>
+        </div>
 
       </section>
     </main>
     <!-- Fin Mis trabajos -->
 
     <!-- Inicio Formulario -->
-
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/dK7wxYR7" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=dK7wxYR7&utm_source=typeform.com-01EADH65MCG465XBMBH0DWK1Y5-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
     <!-- Fin Formulario -->
 
     <!-- Inicio Footer -->
@@ -185,9 +230,9 @@
       </div>
       <div class="pt-2">
         <p>Puedes encontrarme en: 
-          <i class="fas fa-camera fa-1x mt-2 mx-1"></i>
-          <i class="fas fa-camera fa-1x mt-2 mx-1"></i>
-          <i class="fas fa-camera fa-1x mt-2 mx-1"></i>
+          <a href="https://github.com/javicanelo/" target="blank_"><i class="fab fa-github-square fa-lg mt-2 mx-1 text-white"></i></a>
+          <a href="https://www.behance.net/javicu" target="blank_"><i class="fab fa-behance-square fa-lg mt-2 mx-1 text-white"></i></a>
+          <a href="https://www.instagram.com/javicanelo/" target="blank_"><i class="fab fa-instagram-square fa-lg mt-2 mx-1 text-white"></i></a>
         </p>
       </div> 
     </footer>
