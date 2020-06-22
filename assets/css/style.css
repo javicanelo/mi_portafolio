@@ -4,7 +4,7 @@ body {
 }
 
 .color-fondo {
-    background-color: #d10f82;
+    background-color: #009da5;
 }
 
 h1 {
@@ -47,6 +47,5 @@ header {
     background-image: url(../img/fondo_turquesa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
 }
 
